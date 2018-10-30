@@ -7,7 +7,14 @@ To relieve the pressure of being a developer (kk).
     Images that are funny without the need of editing then.
     
 - Memes:
-    Memes come here...
+    ```
+    + history-and-more: 
+                memes related to history, politics, geography, etc.
+    + programming: 
+                memes that only programmers will understand.
+    + other:
+                if the meme don't fit in any other category, it comes here.
+    ```
     
 - Gifs:
     Funny gifs.
