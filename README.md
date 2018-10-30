@@ -12,6 +12,10 @@ To relieve the pressure of being a developer (kk).
                 memes related to history, politics, geography, etc.
     + programming: 
                 memes that only programmers will understand.
+    + tv-shows:
+                memes that make reference to movies, books or tv shows.
+    + math:
+                math memes.
     + other:
                 if the meme don't fit in any other category, it comes here.
     ```
