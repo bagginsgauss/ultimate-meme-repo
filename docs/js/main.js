@@ -38,6 +38,32 @@ function createImages() {
 }
 
 $(document).ready(function (){
-    createImages();
+    //createImages();
     $(".materialboxed").materialbox();
+
+    $.ajax({
+        url:"http://0.0.0.0:8080/",
+        type: "GET",
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+        //     "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+        //     "Access-Control-Allow-Headers": "X-PINGOTHER, Content-Type",
+        //     "Access-Control-Max-Age": "86400"
+        },
+
+        beforeSend: function( xhr ) {
+            xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+        }
+
+    }).done(function(data) {
+        $(data).find("td > a").each(function(){
+            // will loop through
+            alert("Found a file: " + $(this).attr("href"));
+         });
+
+    }).fail(function(data) {
+        console.log("ERROR");
+        console.log(data);
+    });
+
 });
